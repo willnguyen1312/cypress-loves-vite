@@ -1,6 +1,16 @@
 <template>
   <h1 class="text-yellow-400">{{ msg }}</h1>
 
+  <button
+    bg="blue-400 hover:blue-500 dark:blue-500 dark:hover:blue-600"
+    text="sm red-400"
+    font="mono light"
+    p="y-2 x-4"
+    border="2 rounded blue-200"
+  >
+    Button
+  </button>
+
   <p>
     <a href="https://vitejs.dev/guide/features.html" target="_blank"
       >Vite Documentation</a
