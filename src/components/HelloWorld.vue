@@ -1,5 +1,5 @@
 <template>
-  <h1>{{ msg }}</h1>
+  <h1 class="text-yellow-400">{{ msg }}</h1>
 
   <p>
     <a href="https://vitejs.dev/guide/features.html" target="_blank"
