@@ -1,13 +1,13 @@
 <template>
   <div class="card">
     <div id="bookmark">
-      <img 
+      <img
         id="bookmark-img"
         src="https://i.pinimg.com/originals/ca/44/77/ca4477c4eeff8d0ac211fa114be21e6c.png"
-      >
+      />
     </div>
 
-    <img 
+    <img
       id="image"
       src="https://res.cloudinary.com/grubhub/image/upload/d_search:browse-images:default.jpg/w_271,h_132,f_auto,q_auto,dpr_auto,g_auto,c_fill/yre8t3aa0fhgv8rhrjof"
     />
@@ -26,15 +26,11 @@
           </p>
         </span>
         <span>
-          <span 
-            v-for="i in stars" 
-            :key="i"
-            data-cy="stars"
-            class="star"
-          >
+          <span v-for="i in stars" :key="i" data-cy="stars" class="star">
             ⭐
           </span>
-        ️️</span>
+          ️️</span
+        >
       </div>
     </div>
   </div>
@@ -43,13 +39,13 @@
 <script>
 const requiredString = {
   type: String,
-  required: true
-}
+  required: true,
+};
 
 const requiredBoolean = {
   type: Boolean,
-  required: true
-}
+  required: true,
+};
 
 export default {
   props: {
@@ -59,12 +55,11 @@ export default {
     isAvailable: requiredBoolean,
     stars: {
       type: Number,
-      default: 0
-    }
-  }
-}
+      default: 0,
+    },
+  },
+};
 </script>
-
 
 <style scoped>
 .card {
