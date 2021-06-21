@@ -1,8 +1,11 @@
 module.exports = {
-  presets: [
-    '@babel/env'
+  presets: ["@babel/env"],
+  plugins: [
+    [
+      "@babel/transform-runtime",
+      {
+        regenerator: true,
+      },
+    ],
   ],
-  plugins: [["@babel/transform-runtime", {
-      "regenerator": true
-    }]]
-}
+};
